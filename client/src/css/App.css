@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #DFD3C3;
+  background-color: #dfd3c3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,38 @@ body .App {
   align-items: center;
   justify-content: center;
 }
+
+
+/* Greeting styles*/
+.hello {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
+}
+.cat {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+  margin-bottom: -1rem;
+}
+.title {
+  position: relative;
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 2.5rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(87, 85, 85);
+  color: var(--darkBrown);
+}
+
+
+/* card styles */
 body .App .card {
   display: flex;
   flex-direction: column;
@@ -34,7 +66,8 @@ body .App .card {
   padding: 2rem 1.5rem;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
-body .App .card .card-info, body .App .card .card-social-container {
+body .App .card .card-info,
+body .App .card .card-social-container {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -102,7 +135,8 @@ body .App .card .card-name {
   font-weight: 500;
   line-height: 2rem;
 }
-body .App .card .card-id, body .App .card .csi-p {
+body .App .card .card-id,
+body .App .card .csi-p {
   color: #9e7676;
   font-size: 0.9em;
   letter-spacing: 1px;
@@ -125,6 +159,9 @@ body .App .card {
   border: 1px solid #ccc;
   padding: 20px;
 }
+
+
+/* card animation */
 body .App .card-outer:hover .card {
   cursor: pointer;
   transform: scale(0.98);
@@ -156,6 +193,8 @@ body .App .card-transition-exit-active {
   transform: translateY(-20px);
   transition: opacity 500ms, transform 500ms;
 }
+
+/* custom scrollbar styles */
 body .App::-webkit-scrollbar {
   width: 6px;
 }
@@ -167,6 +206,9 @@ body .App::-webkit-scrollbar-thumb {
   background-color: var(--lightOr);
   border-radius: 10px;
 }
+
+
+/* Responsiveness */
 @media (max-width: 962px) {
   body .App .card-grid {
     grid-template-columns: repeat(2, 1fr);
